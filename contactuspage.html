@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <meta name="google-site-verification" content="XdZnqA9rwc4e34tg2-CNuRELes93jx7xsKOCtFs7i4w" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("button").click(function(){
+           $.post("demo_test_post.asp", 
+           {
+            name: "", 
+            surname: ""
+           },
+           function(data, status){
+            alert("Data captured: " + data + "\status: " + status);
+           });           
+        }); 
+    });
+</script>
+
+<style>
+    [class*= "col-"]{
+       float: left;
+       padding: 15px;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    body{
+      margin: 0;   
+    }
+    header{
+        text-align: center;
+        padding: 35px;
+        font-size: 100%;
+        background-color: rgba(0, 189, 189, 0.823);        
+    }
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    li{
+        float: left;
+    }
+    li a{
+        display: block;
+        padding: 10px;
+        background-color:black;
+    }
+    img{
+        border: 0.5px solid;
+        border-radius: 1px;
+        padding: 5px;
+        width: 100%;
+       
+    }
+    
+    html{
+         font-family: 'Times New Roman', Times, serif;
+         width: 1000px;
+         background-image: url("Images/img.jpeg");
+    }
+    footer{
+       background-color: rgb(193, 122, 17);
+       font-size: large; 
+       text-align: center; 
+   }
+    
+    @media only screen and (orientation: portrait) and (max-device-width: 650px) {
+        body{
+            max-width: 100%;
+            image-orientation: from-image ;
+            
+        }
+    [class*= "col-"]{
+        width: 100%;
+    }
+    @media only screen and (min-width: 960px) and (max-width: 1024px){
+         .wrapper-main {
+            width: 100%;
+            font-size: 60px;
+            padding: 50px;
+            background: white;
+         }
+    }
+    }
+</style>
+
+    <title> Ikhaya Lezizwe Organization </title> 
+    
+    <h1> Ikhaya Lezizwe Foundation </h1>
+    <h4> Where our home is your home </h4>
+
+    <ul>
+   <li><a href="homepage.html">iKHAYALETHU</a> </li> 
+   <li><a href="donations.html">Donations</a> </li>
+   <li><a href="aboutpage.html">More about our local NGO</a> </li> 
+   <li><a href="newspage.html">News and Latest updates</a> </li>
+   <li><a href="productsandservices.html">Our services provided</a> </li> 
+   <li><a href="contactuspage.html">Get in touch with us</a>   </li> 
+   </ul>
+    
+</header>
+<body>
+    <div class="wrapper-main">
+    <img src="Images/IkhayaLezizweLogo.jpg" style="width: 25%">
+
+     <form> 
+        <h2> Please do get in touch with us</h2>
+        <h3> To hear more about us and the latest news and updates</h3>
+        <label for="Name"> Enter Name: </label><br>
+        <input type="text" id="Name" name="Name" value=""><br>
+        <label for="Surname"> Enter Surname: </label><br>
+        <input type="text" id="Surname" name="Surname" value=""><br>
+        <label for="Email"> Enter email address: </label><br>
+        <input type="text" id="Email" name="Email" value=""><br>
+
+        <button> Submit</button>
+
+    </form>
+
+    <h1> For any inquiries to make, feel free to contact us </h1>
+    <address> Thembalethu.GS
+        104 Bluefin Court River Road, Da Gama Park, Cape Town, 7975 </address>
+    <p> telephone: (011) 155 6920 / (011) 145 7820 </p>
+    <p> fax: (112) 546 2222 </p>
+    <p> email: khayalezizwe.org.za </p>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.494960989741!2d18.396484275586893!3d-34.15926087311687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc15db4be62643%3A0x4289649012b7ace8!2sThembalethu.GS!5e0!3m2!1sen!2sza!4v1694256373405!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</body>
+<footer> Ikhaya Lezizwe &copy; est. 2023 | Founder: Sisonke Mntambo | st10353330 @ WEDE5020</footer>
+</html>
